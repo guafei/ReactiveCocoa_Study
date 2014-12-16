@@ -14,6 +14,7 @@
 		5640F40D1A3ADC5900AECE0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5640F40C1A3ADC5900AECE0B /* Images.xcassets */; };
 		5640F4101A3ADC5900AECE0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5640F40E1A3ADC5900AECE0B /* LaunchScreen.xib */; };
 		5640F41C1A3ADC5900AECE0B /* CPReactiveCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5640F41B1A3ADC5900AECE0B /* CPReactiveCocoaTests.m */; };
+		5640F4431A3ED1FA00AECE0B /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5640F43C1A3ED1D000AECE0B /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5640F3FB1A3ADC5900AECE0B;
 			remoteInfo = CPReactiveCocoa;
+		};
+		5640F43B1A3ED1D000AECE0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5640F4341A3ED1D000AECE0B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725EA19E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
+		5640F43D1A3ED1D000AECE0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5640F4341A3ED1D000AECE0B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725F519E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-MacTests";
+		};
+		5640F43F1A3ED1D000AECE0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5640F4341A3ED1D000AECE0B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047260C19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		5640F4411A3ED1D000AECE0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5640F4341A3ED1D000AECE0B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047261619E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOSTests";
+		};
+		5640F4441A3ED2CE00AECE0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5640F4341A3ED1D000AECE0B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D047260B19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +76,7 @@
 		5640F4151A3ADC5900AECE0B /* CPReactiveCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPReactiveCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5640F41A1A3ADC5900AECE0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5640F41B1A3ADC5900AECE0B /* CPReactiveCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPReactiveCocoaTests.m; sourceTree = "<group>"; };
+		5640F4341A3ED1D000AECE0B /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = ../../../ReactiveCocoa/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5640F4431A3ED1FA00AECE0B /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +104,7 @@
 				5640F3FE1A3ADC5900AECE0B /* CPReactiveCocoa */,
 				5640F4181A3ADC5900AECE0B /* CPReactiveCocoaTests */,
 				5640F3FD1A3ADC5900AECE0B /* Products */,
+				5640F4341A3ED1D000AECE0B /* ReactiveCocoa.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +158,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5640F4351A3ED1D000AECE0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5640F43C1A3ED1D000AECE0B /* ReactiveCocoa.framework */,
+				5640F43E1A3ED1D000AECE0B /* ReactiveCocoa-MacTests.xctest */,
+				5640F4401A3ED1D000AECE0B /* ReactiveCocoa.framework */,
+				5640F4421A3ED1D000AECE0B /* ReactiveCocoa-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +183,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5640F4451A3ED2CE00AECE0B /* PBXTargetDependency */,
 			);
 			name = CPReactiveCocoa;
 			productName = CPReactiveCocoa;
@@ -186,6 +237,12 @@
 			mainGroup = 5640F3F31A3ADC5900AECE0B;
 			productRefGroup = 5640F3FD1A3ADC5900AECE0B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5640F4351A3ED1D000AECE0B /* Products */;
+					ProjectRef = 5640F4341A3ED1D000AECE0B /* ReactiveCocoa.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5640F3FB1A3ADC5900AECE0B /* CPReactiveCocoa */,
@@ -193,6 +250,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5640F43C1A3ED1D000AECE0B /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 5640F43B1A3ED1D000AECE0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5640F43E1A3ED1D000AECE0B /* ReactiveCocoa-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-MacTests.xctest";
+			remoteRef = 5640F43D1A3ED1D000AECE0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5640F4401A3ED1D000AECE0B /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 5640F43F1A3ED1D000AECE0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5640F4421A3ED1D000AECE0B /* ReactiveCocoa-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-iOSTests.xctest";
+			remoteRef = 5640F4411A3ED1D000AECE0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5640F3FA1A3ADC5900AECE0B /* Resources */ = {
@@ -240,6 +328,11 @@
 			isa = PBXTargetDependency;
 			target = 5640F3FB1A3ADC5900AECE0B /* CPReactiveCocoa */;
 			targetProxy = 5640F4161A3ADC5900AECE0B /* PBXContainerItemProxy */;
+		};
+		5640F4451A3ED2CE00AECE0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveCocoa-iOS";
+			targetProxy = 5640F4441A3ED2CE00AECE0B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -343,8 +436,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 6.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include",
+				);
 				INFOPLIST_FILE = CPReactiveCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,8 +452,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 6.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include",
+				);
 				INFOPLIST_FILE = CPReactiveCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -412,6 +517,7 @@
 				5640F4211A3ADC5900AECE0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5640F4221A3ADC5900AECE0B /* Build configuration list for PBXNativeTarget "CPReactiveCocoaTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +526,7 @@
 				5640F4241A3ADC5900AECE0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
